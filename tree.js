@@ -5,7 +5,7 @@ var color;
 var colorList = [63,1,21,112,176,240,277,323];
 
 function $(id){
-    return document.getElementById(id);
+    return document.querySelector(id);
 }
 
 function rand(min,max){
@@ -40,13 +40,15 @@ function drawBranch(startX,startY,len,angle,branchWidth,hsl){
 }
 
 function main(){
-    var canvas = $("canvas");
+    var canvas = $("#canvas");
     canvas.width = window.innerWidth/2;
     canvas.height = window.innerHeight*3/4;
     ctx = canvas.getContext("2d");
     var width = window.innerWidth;
     var height = window.innerHeight;
     color = colorList[Math.floor(rand(0,colorList.length))];
+    $(".text").style.backgroundColor = "hsl("+color+",100%,90%)";
+    $(".text").style.borderColor = "hsl("+color+",100%,20%)";
     drawBranch(width/4,height*3/4,100,0,10,10);
 }
 
