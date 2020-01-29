@@ -1,9 +1,0 @@
-Sitemap: http://adrianarroyocalle.github.io/sitemap.txt
-Sitemap: http://adrianarroyocalle.github.io/blog/sitemap.xml
-
-#Basic settings
-User-Agent: *
-Disallow: /private
-
-User-Agent: Googlebot-News
-Disallow: *

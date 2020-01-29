@@ -1,0 +1,54 @@
+title: Adrián Arroyo Calle
+---
+body:
+
+My name is Adrián Arroyo Calle, I'm a computer scientist from [Valladolid, Spain](https://en.wikipedia.org/wiki/Valladolid). I'm finishing my studies in computer science at Valladolid University and having an internship in [Telefónica R&D](http://www.tid.es/). I'm very curious about the world, always looking for the not-so-known things. This is the entry point to my Internet home. When I grow up I want to be an Illuminati.
+
+> If everybody thinks the same, then somebody isn't thinking.
+
+Use the left bar to navigate between projects.
+
+# Interests and hobbies
+
+These are some things, but not all, that I'm interested in:
+<div class="hobby-table">
+  <div class="hobby-row">
+    <span>prolog</span>
+    <span>history</span>
+    <span>rust</span>
+  </div>
+  <div class="hobby-row">
+    <span>databases</span>
+    <span>orienteering</span>
+    <span>javascript</span>
+    <span>webdev</span>
+  </div>
+  <div class="hobby-row">
+    <span>gamedev</span>
+    <span>python</span>
+    <span>ai</span>
+    <span>maps</span>
+  </div>
+  <div class="hobby-row">
+    <span>philosophy</span>
+    <span>travel</span>
+  </div>
+</div>
+
+# Resume
+
+You can [download my resume here](/cv/resume.pdf).
+
+# Contact me
+
+* Email: adrian D0T arroyocalle (@) gmail D0T com
+* [GitHub](https://github.com/aarroyoc/)
+* [Twitter](https://twitter.com/aarroyoca)
+* [LinkedIn](https://www.linkedin.com/in/adrianarroyocalle/)
+* [Telegram](https://t.me/aarroyoc)
+* [Instagram](https://www.instagram.com/aarroyoca/)
+
+<div class="canvas">
+  <canvas width="720" height="720" id="canvas"></canvas>
+</div>
+<script async src="./static/tree.js"></script>

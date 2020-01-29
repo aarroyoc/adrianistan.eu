@@ -1,0 +1,9 @@
+name: Mendel Vectorizer
+---
+description:
+
+Mendel Vectorizer is a Rust program that allows doing simple vectorization of black/white raster shapes. You only need to select some points in the shape, and the algorithm will try to join the points using Bezier curves. It's a genetic algorithm.
+
+![Mendel Vectorizer](mendelvectorizer.png)
+---
+website: https://github.com/aarroyoc/mendel-vectorizer

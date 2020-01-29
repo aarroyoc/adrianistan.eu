@@ -30,10 +30,14 @@ function drawBranch(startX,startY,len,angle,branchWidth,hsl){
     }
 
     var factor = rand(0.6,0.9);
+    //var factor = 0.7;
     var angle = rand(-30,0);
+    //var angle = -90;
     drawBranch(0, -len, len*factor, angle,branchWidth*factor,hsl*1.2);
     factor = rand(0.6,0.9);
+    //factor = 0.7;
     angle = rand(0,30);
+    //angle = 90;
     drawBranch(0, -len, len*factor, angle,branchWidth*factor,hsl*1.2);
 
     ctx.restore();
@@ -41,15 +45,13 @@ function drawBranch(startX,startY,len,angle,branchWidth,hsl){
 
 function main(){
     var canvas = $("#canvas");
-    canvas.width = window.innerWidth/2;
-    canvas.height = window.innerHeight*3/4;
     ctx = canvas.getContext("2d");
-    var width = window.innerWidth;
-    var height = window.innerHeight;
+    var width = canvas.width;
+    var height = canvas.height;
     color = colorList[Math.floor(rand(0,colorList.length))];
-    $(".text").style.backgroundColor = "hsl("+color+",100%,90%)";
-    $(".text").style.borderColor = "hsl("+color+",100%,20%)";
-    drawBranch(width/4,height*3/4,100,0,10,10);
+    //$(".text").style.backgroundColor = "hsl("+color+",100%,90%)";
+    //$(".text").style.borderColor = "hsl("+color+",100%,20%)";
+    drawBranch(width/2,height,150,0,10,10);
 }
 
 window.addEventListener("load",main);
