@@ -1,0 +1,16 @@
+name: Kovel
+---
+description:
+
+Kovel is a 3D voxel editor for Haiku, Linux and Windows. Create fantastic models without knowledge. Just fill the grid with your colors! Save your models in Kovel file (*.kvl) or in COLLADA DAE (only export). See changes in your models in realtime, rotate and scale. Kovel also has infinite undo history (in a same file). Kovel has a command line tool (kovelcli) to automate your work pipeline. Convert all your Kovel files into Collada DAE in a few commands.
+
+It uses wxWidgets, OpenGL and libbson and it's made in C++.
+
+![kovel.png](kovel.png)
+![kovel-1.png](kovel-1.png)
+![Icon made in Kovel](kovelicon.png)
+![Rotate models in Kovel](kovelrotate.png)
+![Kovel on Haiku](kovelhaiku.png)
+![Blender editing](blenderkovel.png)
+---
+website: http://github.com/aarroyoc/kovel
