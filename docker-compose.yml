@@ -7,7 +7,7 @@ services:
     - ./:/opt/adrianistan.eu
   publisher:
     build: .
-    command: netlify deploy --dir=. --prod
+    command: netlify deploy --dir=out --prod
     environment: 
       NETLIFY_AUTH_TOKEN:
       NETLIFY_SITE_ID: 76f0a0da-c560-431e-a5c2-743809bf96e0
