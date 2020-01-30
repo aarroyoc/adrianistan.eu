@@ -1,16 +1,12 @@
 version: "3.6"
 services:
   builder:
-    build:
-      dockerfile: ./Dockerfile.lektor
-      context: .
+    build: .
     command: lektor build -O out
     volumes:
     - ./:/opt/adrianistan.eu
   publisher:
-    build:
-      dockerfile: ./Dockerfile.netlify
-      context: .
+    build: .
     command: netlify deploy --dir=. --prod
     environment: 
       NETLIFY_AUTH_TOKEN:

@@ -1,5 +1,0 @@
-FROM node:12.14.1
-
-RUN npm install -g netlify-cli@2.30.0
-
-WORKDIR /opt/adrianistan.eu/out
