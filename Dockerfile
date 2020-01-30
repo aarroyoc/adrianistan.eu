@@ -6,3 +6,4 @@ RUN apt-get update && apt-get install -y python3.7-dev python3-pip nodejs npm &&
 COPY requirements.txt /tmp/requirements.txt
 RUN pip3 install -r /tmp/requirements.txt
 RUN npm install -g netlify-cli@2.30.0
+WORKDIR /opt/adrianistan.eu
