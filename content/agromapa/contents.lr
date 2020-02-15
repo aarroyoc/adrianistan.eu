@@ -1,0 +1,9 @@
+_model: page
+---
+title: Agromapa
+---
+body:
+
+<script>
+window.location.href = "https://agromapa.netlify.com/";
+</script>
