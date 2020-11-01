@@ -1,10 +1,9 @@
-FROM ubuntu:20.04
+FROM alpine:3.12.1
 
-ENV DEBIAN_FRONTEND=noninteractive
-RUN apt-get update && apt-get install -y python3.8-dev python3-pip nodejs npm && \
-    rm -rf /var/lib/apt/lists/*
+RUN apk add --no-cache python3 python3-dev py3-pip nodejs npm gcc musl-dev libffi-dev openssl-dev
 
 COPY requirements.txt /tmp/requirements.txt
-RUN pip3 install -r /tmp/requirements.txt
-RUN npm install -g netlify-cli@2.30.0
+RUN pip install -r /tmp/requirements.txt
+RUN npm install -g netlify-cli@2.67.0
+
 WORKDIR /opt/adrianistan.eu
