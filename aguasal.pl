@@ -17,6 +17,7 @@ project("Lumtumo", "/projects/lumtumo/").
 project("Mapaquiz", "/projects/mapaquiz/").
 project("Mendel Vectorizer", "/projects/mendel-vectorizer/").
 project("Open source", "/projects/open-source/").
+project("Ruta x ruta", "/projects/rutaxruta/").
 project("Space Pipes", "/projects/space-pipes/").
 project("SuperFreeCell", "/projects/superfreecell/").
 project("Tergaxon", "/projects/tergaxon/").
