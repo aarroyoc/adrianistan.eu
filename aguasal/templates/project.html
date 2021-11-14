@@ -1,0 +1,7 @@
+{% extends "base.html" %}
+{% block title %}{% block name %}{% endblock %}{% endblock %}
+{% block content %}
+  <h2>{% block name %}{% endblock %}</h2>
+  <a href="{% block website %}{% endblock %}">{% block website %}{% endblock %}</a>
+  {% block description %}{% endblock %}
+{% endblock %}
