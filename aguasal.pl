@@ -41,10 +41,8 @@ copy_file(Input, Output, File) :-
     append_path(Input, File, InputFile),
     append_path(Output, File, OutputFile),
     portray_clause(copy_file(InputFile, OutputFile)),
-    atom_chars(IFAtom, InputFile),
-    atom_chars(OFAtom, OutputFile),
-    open(IFAtom, read, StreamIn, [type(binary)]),
-    open(OFAtom, write, StreamOut, [type(binary)]),
+    open(InputFile, read, StreamIn, [type(binary)]),
+    open(OutputFile, write, StreamOut, [type(binary)]),
     read_n_chars(StreamIn, _, FileContent),
     '$put_chars'(StreamOut, FileContent),
     close(StreamOut),
@@ -63,8 +61,7 @@ render_file(Input, Output, Page) :-
     portray_clause(render_file(InputPage, OutputPage)),
     findall(Project, (project(Text, Link), Project = ["text"-Text, "link"-Link]), Projects),
     render(InputPage, ["projects"-Projects], RenderPage),
-    atom_chars(OPAtom, OutputPage),
-    open(OPAtom, write, Stream),
+    open(OutputPage, write, Stream),
     format(Stream, "~s", [RenderPage]),
     close(Stream).
 
