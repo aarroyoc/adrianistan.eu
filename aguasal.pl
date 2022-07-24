@@ -43,7 +43,7 @@ copy_file(Input, Output, File) :-
     portray_clause(copy_file(InputFile, OutputFile)),
     open(InputFile, read, StreamIn, [type(binary)]),
     open(OutputFile, write, StreamOut, [type(binary)]),
-    read_n_chars(StreamIn, _, FileContent),
+    get_n_chars(StreamIn, _, FileContent),
     '$put_chars'(StreamOut, FileContent),
     close(StreamOut),
     close(StreamIn).
