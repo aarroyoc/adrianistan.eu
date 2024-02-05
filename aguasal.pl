@@ -6,9 +6,10 @@
 :- use_module('../teruel/teruel.pl').
 
 
+project("Blog", "/projects/blog/").
+project("Scryer Prolog", "/projects/scryer-prolog/").
 project("Agromapa CyL", "/projects/agromapa-cyl/").
 project("Anrokku", "/projects/anrokku/").
-project("Blog", "/projects/blog/").
 project("Conway", "/projects/conway/").
 project("Firefox Addons", "/projects/firefox-addons/").
 project("Keynotes", "/projects/keynotes/").
