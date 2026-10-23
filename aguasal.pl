@@ -3,7 +3,7 @@
 :- use_module(library(format)).
 :- use_module(library(lists)).
 
-:- use_module('../teruel/teruel.pl').
+:- use_module('./teruel/teruel.pl').
 
 
 project("Blog", "/projects/blog/").
